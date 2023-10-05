@@ -19,3 +19,8 @@ nav{
 .react-multiple-carousel__arrow{
     z-index: 2;
 }
+
+.active{
+    color: rgb(46, 137, 10);
+    font-weight: 600;
+}

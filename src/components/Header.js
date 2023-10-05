@@ -1,6 +1,6 @@
 import logo from "../logo.png";
 import "./css/Header.css";
-import { Link } from "react-router-dom";
+import { NavLink,Link } from "react-router-dom";
 const Header = () => {
   return (
     <>
@@ -16,7 +16,7 @@ const Header = () => {
             <div className="max-w-7xl mx-auto">
               <div className="flex h-16 items-center">
                 <div className="ml-4 flex lg:ml-0">
-                  <Link to="/" className="flex items-center space-x-2">
+                  <Link to="/" className="flex items-center space-x-2" >
                     <img className="h-8 w-auto" src={logo} alt="" />
                     <div className="logo-text">
                       Food <span className="logo-text-second">Box</span>
@@ -26,41 +26,41 @@ const Header = () => {
 
                 <div className="hidden lg:ml-8 lg:block lg:self-stretch">
                   <div className="flex h-full space-x-8 ">
-                    <Link
+                    <NavLink
                       to="/"
-                      className="flex items-center text-sm font-medium text-gray-700  dark:text-white hover:text-lime-600"
+                      className="flex items-center text-sm font-medium text-gray-700 dark:text-white hover:text-lime-600 border-white border-b-2 hover:border-lime-600"
                     >
                       Home
-                    </Link>
+                    </NavLink>
                     <a
                       href="#"
-                      className="flex items-center text-sm font-medium text-gray-700  dark:text-white hover:text-lime-600"
+                      className="flex items-center text-sm font-medium text-gray-700  dark:text-white hover:text-lime-600 border-white border-b-2 hover:border-lime-600"
                     >
                       Restaurants
                     </a>
-                    <Link
+                    <NavLink
                       to="/about"
-                      className="flex items-center text-sm font-medium text-gray-700  dark:text-white hover:text-lime-600"
+                      className="flex items-center text-sm font-medium text-gray-700  dark:text-white hover:text-lime-600 border-white border-b-2 hover:border-lime-600"
                     >
                       About Us
-                    </Link>
-                    <Link
+                    </NavLink>
+                    <NavLink
                       to="/contact"
-                      className="flex items-center text-sm font-medium text-gray-700  dark:text-white hover:text-lime-600"
+                      className="flex items-center text-sm font-medium text-gray-700  dark:text-white hover:text-lime-600 border-white border-b-2 hover:border-lime-600"
                     >
                       Contact Us
-                    </Link>
+                    </NavLink>
                   </div>
                 </div>
 
                 <div className="ml-auto flex items-center">
                   <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
-                    <a
-                      href="#"
-                      className="text-sm font-medium text-gray-700  dark:text-white hover:text-lime-600"
+                    <NavLink
+                      to="/sign-in"
+                      className="text-sm font-medium text-gray-700  dark:text-white hover:text-lime-600 "
                     >
                       Sign in
-                    </a>
+                    </NavLink>
                     <span
                       className="h-6 w-px bg-gray-200"
                       aria-hidden="true"

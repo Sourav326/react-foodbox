@@ -8,6 +8,7 @@ import About from './components/About';
 import Home from './components/Home';
 import Error from './components/Error';
 import Contact from './components/Contact';
+import Signin from './components/Signin';
 
 
 const router = createBrowserRouter([
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
       {
         path:"/contact",
         element:<Contact />
+      },
+      {
+        path:"/sign-in",
+        element:<Signin />
       }
     ],
     errorElement:<Error />
