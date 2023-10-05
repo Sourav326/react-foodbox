@@ -1,5 +1,6 @@
 import logo from "../logo.png";
 import "./css/Header.css";
+import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <>
@@ -15,40 +16,40 @@ const Header = () => {
             <div className="max-w-7xl mx-auto">
               <div className="flex h-16 items-center">
                 <div className="ml-4 flex lg:ml-0">
-                  <a href="#" className="flex items-center space-x-2">
+                  <Link to="/" className="flex items-center space-x-2">
                     <img className="h-8 w-auto" src={logo} alt="" />
                     <div className="logo-text">
                       Food <span className="logo-text-second">Box</span>
                     </div>
-                  </a>
+                  </Link>
                 </div>
 
                 <div className="hidden lg:ml-8 lg:block lg:self-stretch">
                   <div className="flex h-full space-x-8 ">
-                    <a
-                      href="#"
+                    <Link
+                      to="/"
                       className="flex items-center text-sm font-medium text-gray-700  dark:text-white hover:text-lime-600"
                     >
                       Home
-                    </a>
+                    </Link>
                     <a
                       href="#"
                       className="flex items-center text-sm font-medium text-gray-700  dark:text-white hover:text-lime-600"
                     >
                       Restaurants
                     </a>
-                    <a
-                      href="#"
+                    <Link
+                      to="/about"
                       className="flex items-center text-sm font-medium text-gray-700  dark:text-white hover:text-lime-600"
                     >
                       About Us
-                    </a>
-                    <a
-                      href="#"
+                    </Link>
+                    <Link
+                      to="/contact"
                       className="flex items-center text-sm font-medium text-gray-700  dark:text-white hover:text-lime-600"
                     >
                       Contact Us
-                    </a>
+                    </Link>
                   </div>
                 </div>
 
