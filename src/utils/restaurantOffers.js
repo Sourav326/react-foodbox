@@ -5,17 +5,17 @@ const restaurantOffers = [
         "code":"try new",
     },
     {
-        "id": "1",
+        "id": "2",
         "offer": "Flat ₹50 off",
         "code":"Friday",
     },
     {
-        "id": "1",
+        "id": "3",
         "offer": "Flat ₹120 off",
         "code":"axis120 | Above 500",
     },
     {
-        "id": "1",
+        "id": "4",
         "offer": "8Flat ₹200 off",
         "code":"axis200 | Above 1000",
     },

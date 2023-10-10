@@ -13,9 +13,9 @@ const ProductList = () => {
           
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 py-6">
             {
-                menu.map((item,index)=>(
+                menu.map((item)=>(
     
-                    <ProductCard item={item}  key={index}/>
+                    <ProductCard item={item}  key={item.id}/>
                 ))
             }
           </div>

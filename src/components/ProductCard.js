@@ -6,7 +6,7 @@ const ProductCard = (props) => {
   const item = props.item;
 
   const dispatch  = useDispatch()
-  const handleAddToCart = () => {
+  const handleAddToCart = (item) => {
     // Dispatch an action
     dispatch(additem(item))
   }

@@ -11,10 +11,11 @@ const Cart = () => {
     // Dispatch an action
     dispatch(clearCart())
   }
-  const handleRemoveItem = () => {
+  const handleRemoveItem = (item) => {
     // Dispatch an action
-    dispatch(removeItem())
+    dispatch(removeItem(item))
   }
+
     return(
         <>
         <div className="mx-auto w-full max-w-screen-xl py-16 px-6 lg:px-8 border-b">
@@ -30,17 +31,16 @@ const Cart = () => {
                     
                     cartItems.map((item) =>(
 
-                        <div className="flex justify-between items-center p-3 rounded-lg shadow-[0_.5rem_1rem_5px_rgba(0,0,0,.15)] border-0 bg-white">
-                            <div className="flex gap-2 w-96">
+                        <div key={item.id} className="flex flex-col lg:flex-row justify-between items-center p-3 rounded-lg shadow-[0_.5rem_1rem_5px_rgba(0,0,0,.15)] border-0 bg-white">
+                            <div className="flex gap-2 w-full lg:w-96">
                                 <img className="" src={productImage} alt={productImage} width="100px"/>
                                 <div className="flex flex-col justify-between">
                                     <h2 className="text-md font-bold hover:text-lime-600">{item.name}</h2>
                                     <p className="text-sm capitalize text-slate-500">{item.description}</p>
                                 </div>
                             </div>
-                            <span className="font-bold">2</span>
                             <span className="font-bold">₹{item.price}</span>
-                            <span onClick={() => handleRemoveItem()} className="font-bold text-red-500 hover:text-red-800 hover:cursor-pointer"><CloseIcon /></span>
+                            <span onClick={() => handleRemoveItem(item)} className="flex items-center font-bold text-red-500 hover:text-red-800 hover:cursor-pointer">Remove <CloseIcon /></span>
                         </div>
                     )) 
                 }
