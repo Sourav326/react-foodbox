@@ -1,5 +1,5 @@
 import logo from "../logo.png";
-import { Link } from "react-router-dom";
+import { Link,NavLink } from "react-router-dom";
 const Footer = () => {
     return(
         <>
@@ -15,15 +15,18 @@ const Footer = () => {
                     </div>
               </Link>
           </div>
-          <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+          <div className="grid grid-cols-2 gap-20 sm:gap-6 sm:grid-cols-3">
               <div>
                   <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
                   <ul className="text-gray-500 dark:text-gray-400 font-medium">
                       <li className="mb-4">
-                          <a href="https://flowbite.com/" className="hover:underline">Flowbite</a>
+                          <NavLink to="/restaurants" className="hover:underline">Restaurants</NavLink>
+                      </li>
+                      <li className="mb-4">
+                          <NavLink to="/about" className="hover:underline">About Us</NavLink>
                       </li>
                       <li>
-                          <a href="https://tailwindcss.com/" className="hover:underline">Tailwind CSS</a>
+                            <NavLink to="/contact" className="hover:underline">Contact Us</NavLink>
                       </li>
                   </ul>
               </div>
@@ -31,10 +34,13 @@ const Footer = () => {
                   <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
                   <ul className="text-gray-500 dark:text-gray-400 font-medium">
                       <li className="mb-4">
-                          <a href="https://github.com/themesberg/flowbite" className="hover:underline ">Github</a>
+                          <a href="https://github.com/Sourav326" target="_blank" className="hover:underline ">Github</a>
+                      </li>
+                      <li className="mb-4">
+                          <a href="https://twitter.com/" target="_blank" className="hover:underline ">Twitter</a>
                       </li>
                       <li>
-                          <a href="https://discord.gg/4eeurUVvTy" className="hover:underline">Discord</a>
+                          <a href="https://facebook.com" target="_blank" className="hover:underline">Facebook</a>
                       </li>
                   </ul>
               </div>
@@ -42,7 +48,7 @@ const Footer = () => {
                   <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
                   <ul className="text-gray-500 dark:text-gray-400 font-medium">
                       <li className="mb-4">
-                          <a href="#" className="hover:underline">Privacy Policy</a>
+                          <a href="#" className="hover:underline">FAQ</a>
                       </li>
                       <li>
                           <a href="#" className="hover:underline">Terms &amp; Conditions</a>

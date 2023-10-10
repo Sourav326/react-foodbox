@@ -29,10 +29,15 @@ const Carausel = () => {
         <h2 className="text-3xl font-semibold capitalize">
           Best foods for you
         </h2>
-        <Carousel responsive={responsive} className="py-8">
+        <Carousel 
+        responsive={responsive} 
+        autoPlay={true}
+        infinite={true}
+        removeArrowOnDeviceType={["tablet", "mobile"]}
+        className="pt-8 lg:py-8">
             {
                 data.map((item) => (
-                    <div className="w-60 lg:w-40 cursor-pointer" key={item.id}>
+                    <div className="w-40 lg:w-40 cursor-pointer" key={item.id}>
                         <img className="rounded-full" src={IMAGE_URL+item.imageId} alt={product1} />
                     </div>
                 ))

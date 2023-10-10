@@ -9,6 +9,10 @@ import Home from './components/Home';
 import Error from './components/Error';
 import Contact from './components/Contact';
 import Signin from './components/Signin';
+import Restaurant from './components/Restaurant';
+import Signup from './components/Signup';
+import SingleRestaurant from './components/SingleRestaurant';
+import Cart from './components/Cart';
 
 
 const router = createBrowserRouter([
@@ -29,8 +33,24 @@ const router = createBrowserRouter([
         element:<Contact />
       },
       {
+        path:"/restaurants",
+        element:<Restaurant />
+      },
+      {
         path:"/sign-in",
         element:<Signin />
+      },
+      {
+        path:"/sign-up",
+        element:<Signup />
+      },
+      {
+        path:"/restaurant",
+        element:<SingleRestaurant />
+      },
+      {
+        path:"/cart",
+        element:<Cart />
       }
     ],
     errorElement:<Error />

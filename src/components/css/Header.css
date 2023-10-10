@@ -17,7 +17,15 @@ nav{
   top: 0;
 }
 .react-multiple-carousel__arrow{
-    z-index: 2;
+    z-index: 2 !important;
+    background: rgb(198 82 255 / 87%) !important
+}
+
+.react-multiple-carousel__arrow--right{
+    right: calc(0% + 0px) !important;
+}
+.react-multiple-carousel__arrow--left{
+    left: calc(0% + 0px) !important;
 }
 
 .active{
