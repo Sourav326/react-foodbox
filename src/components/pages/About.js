@@ -1,6 +1,7 @@
 import PageHeader from "./PageHeader"
 import Benefits from "../Benefits";
 import CustomerWords from "../CustomerWords";
+import scooter from "../../images/scooter-man.svg"
 
 const About = () => {
     return(
@@ -16,6 +17,15 @@ const About = () => {
 
             </div>
             <CustomerWords />
+            <div className="mx-auto w-full max-w-screen-xl py-16 ">
+                <div className="flex justify-between items-center bg-[#feffcb] p-8 rounded-xl">
+                    <div>
+                        <p className="capitalize text-4xl font-extrabold">doorstep delivery</p>
+                        <p className="text-2xl py-4 capitalize">We will deliver your tasty food at your doorstep</p>
+                    </div>
+                    <img src={scooter} alt={scooter} className="w-[250px] relative top-14" />
+                </div>
+            </div>
         </>
     )
 }
