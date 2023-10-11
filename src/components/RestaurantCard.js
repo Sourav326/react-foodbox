@@ -1,6 +1,7 @@
 
 import{RESTRO_URL} from "../utils/constants"
 import { Link } from "react-router-dom";
+import StarIcon from '@mui/icons-material/Star';
 
 const RestaurantCard = (props,index) => {
     const data = props.item
@@ -12,6 +13,20 @@ const RestaurantCard = (props,index) => {
                 <div className='text-lg font-bold hover:text-lime-600'><Link to="/restaurant">{data?.name}</Link></div>
                 <div className='text-sm text-slate-400 font-normal'>{data?.cuisines.join(', ')}</div>
                 <div className='text-sm text-slate-400 font-bold'>{data?.costForTwo}</div>
+                <div className="flex py-3">
+                    <span className="border border-blue-200 text-blue-600 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 flex items-center">
+                        <span className="text-yellow-400 text-xs"><StarIcon /></span> {data?.avgRating}
+                    </span>
+                    <span
+                        className={`${
+                        data?.veg
+                            ? "border border-green-200 text-green-600 dark:bg-green-200 dark:text-green-800"
+                            : " "
+                        } text-xs font-semibold mr-2 px-2.5 py-0.5 rounded flex items-center `}
+                    >
+                        {data?.veg ? "Veg" : " "}
+                    </span>
+                </div>
             </div>
         </div>
         </>
@@ -19,3 +34,5 @@ const RestaurantCard = (props,index) => {
 }
 
 export default RestaurantCard
+
+

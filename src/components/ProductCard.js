@@ -1,6 +1,5 @@
 import { useDispatch } from "react-redux";
 import { additem } from "../redux/slices/cartSlice";
-import productImage from "../images/pizza1.jpeg";
 import StarIcon from '@mui/icons-material/Star';
 
 const ProductCard = (props) => {
@@ -29,7 +28,7 @@ const ProductCard = (props) => {
             <p className="text-sm text-slate-400 font-normal">{item.description}</p>
           <div className="flex py-3">
             <span className="border border-blue-200 text-blue-600 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 flex items-center">
-                <span className="text-yellow-400 text-xs"><StarIcon /></span> 5.0
+                <span className="text-yellow-400 text-xs"><StarIcon /></span> {item.rating}
             </span>
             <span
                 className={`${

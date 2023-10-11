@@ -42,9 +42,9 @@ const Cart = () => {
                 <div className="flex flex-col py-8 gap-6 col-span-2"> 
                     {
                         
-                        cartItems.map((item) =>(
+                        cartItems.map((item,index) =>(
 
-                            <div key={item.id} className="flex flex-col lg:flex-row justify-between items-center p-3 rounded-lg shadow-[0_.5rem_1rem_5px_rgba(0,0,0,.15)] border-0 bg-white">
+                            <div key={index} className="flex flex-col lg:flex-row justify-between items-center p-3 rounded-lg shadow-[0_.5rem_1rem_5px_rgba(0,0,0,.15)] border-0 bg-white">
                                 <div className="flex gap-2 w-full lg:w-[60rem]">
                                     <img className="" src={item.image} alt={item.image} width="100px"/>
                                     <div className="flex flex-col justify-between">
