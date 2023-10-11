@@ -1,4 +1,4 @@
-import signup from "../images/photo-10.png"
+import signup from "../../images/photo-10.png"
 import { Link } from 'react-router-dom'
 const Signup = () => {
     return(

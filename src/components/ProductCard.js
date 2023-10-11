@@ -1,6 +1,7 @@
 import { useDispatch } from "react-redux";
 import { additem } from "../redux/slices/cartSlice";
 import productImage from "../images/pizza1.jpeg";
+import StarIcon from '@mui/icons-material/Star';
 
 const ProductCard = (props) => {
   const item = props.item;
@@ -16,8 +17,8 @@ const ProductCard = (props) => {
       <div className="rounded-lg shadow-md hover:shadow-lg hover:shadow-2xl cursor-pointer overflow-hidden group dark:bg-gray-800 dark:border-gray-700">
         <a href="#">
           <img
-            className=" rounded-t-lg transition ease-linear delay-70 group-hover:-translate-y-1 group-hover:scale-105  group-hover:duration-400"
-            src={productImage}
+            className="h-64 w-full rounded-t-lg transition ease-linear delay-70 group-hover:-translate-y-1 group-hover:scale-105  group-hover:duration-400"
+            src={item.image}
             alt="product image"
           />
         </a>
@@ -27,15 +28,15 @@ const ProductCard = (props) => {
             </h5>
             <p className="text-sm text-slate-400 font-normal">{item.description}</p>
           <div className="flex py-3">
-            <span className="bg-blue-100 text-blue-600 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800">
-                5.0
+            <span className="border border-blue-200 text-blue-600 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 flex items-center">
+                <span className="text-yellow-400 text-xs"><StarIcon /></span> 5.0
             </span>
             <span
                 className={`${
                 item.isVeg
-                    ? "bg-green-100 text-green-600 dark:bg-green-200 dark:text-green-800"
-                    : "bg-red-100 text-red-600 dark:bg-red-200 dark:text-red-800"
-                } text-xs font-semibold mr-2 px-2.5 py-0.5 rounded`}
+                    ? "border-green-200 text-green-600 dark:bg-green-200 dark:text-green-800"
+                    : "border-red-200 text-red-400 dark:bg-red-200 dark:text-red-800"
+                } text-xs font-semibold mr-2 px-2.5 py-0.5 rounded flex items-center border `}
             >
                 {item.isVeg ? "Veg" : "Non Veg"}
             </span>

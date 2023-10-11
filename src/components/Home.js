@@ -14,10 +14,13 @@ const Home = () => {
               <span className="logo-text-second"> Restaurants </span>
                in your home
             </h1>
-            <p className="lg:w-4/6 py-5 text-2xl lg:text-lg text-slate-500 text-center lg:text-left">
+            <p className="lg:w-4/6 py-5 text-lg lg:text-lg text-slate-500 text-center lg:text-left">
               Get ready for a scrumptious adventure filled with unbeatable
               offers on your favourite foods and restaurants.
             </p>
+            
+              <p className='text-center lg:text-left text-lg pb-6 capitalize text-lime-600 font-bold'>Healthy food for a wealthy mood</p>
+          
           </div>
           <img className="w-2/6" src={HeaderHero} alt="Delivery Boy" />
         </div>

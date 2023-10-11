@@ -37,25 +37,25 @@ const Header = () => {
                   <div className="flex space-x-8 absolute lg:relative bg-white h-[33vh] lg:h-[0vh] w-full left-[0%] top-[101%] flex-col lg:flex-row justify-between justify-center items-center p-[15px] lg:p-[0px]">
                     <NavLink
                       to="/"
-                      className="flex items-center text-2xl lg:text-sm font-medium text-gray-700 dark:text-white hover:text-lime-600 border-white border-b-2 "
+                      className="flex items-center text-xl lg:text-sm font-medium text-gray-700 dark:text-white hover:text-lime-600 border-white border-b-2 "
                     >
                       Home
                     </NavLink>
                     <NavLink
                       to="/restaurants"
-                      className="flex items-center text-2xl lg:text-sm font-medium text-gray-700  dark:text-white hover:text-lime-600 border-white border-b-2 "
+                      className="flex items-center text-xl lg:text-sm font-medium text-gray-700  dark:text-white hover:text-lime-600 border-white border-b-2 "
                     >
                       Restaurants
                     </NavLink>
                     <NavLink
                       to="/about"
-                      className="flex items-center text-2xl lg:text-sm font-medium text-gray-700  dark:text-white hover:text-lime-600 border-white border-b-2 "
+                      className="flex items-center text-xl lg:text-sm font-medium text-gray-700  dark:text-white hover:text-lime-600 border-white border-b-2 "
                     >
                       About Us
                     </NavLink>
                     <NavLink
                       to="/contact"
-                      className="flex items-center text-2xl lg:text-sm font-medium text-gray-700  dark:text-white hover:text-lime-600 border-white border-b-2 "
+                      className="flex items-center text-xl lg:text-sm font-medium text-gray-700  dark:text-white hover:text-lime-600 border-white border-b-2 "
                     >
                       Contact Us
                     </NavLink>
@@ -63,10 +63,10 @@ const Header = () => {
                 </div>
 
                 <div className="ml-auto flex items-center">
-                  <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
+                  <div className="pr-2 lg:pr-0 lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
                     <NavLink
                       to="/sign-in"
-                      className="text-sm font-medium text-gray-700  dark:text-white hover:text-lime-600 "
+                      className="lg:pr-0 text-sm font-medium text-gray-700  dark:text-white hover:text-lime-600 "
                     >
                       Sign in
                     </NavLink>
@@ -76,12 +76,12 @@ const Header = () => {
                     ></span>
                     <NavLink
                       to="/sign-up"
-                      className="text-sm font-medium text-gray-700  dark:text-white hover:text-lime-600"
+                      className="hidden lg:block text-sm font-medium text-gray-700  dark:text-white hover:text-lime-600"
                     >
                       Create account
                     </NavLink>
                   </div>
-                  <div className="ml-4 flow-root lg:ml-6 hidden lg:block">
+                  <div className="pr-6 lg:pr-0 ml-4 flow-root lg:ml-6 lg:block">
                     <NavLink to="/cart" className="group -m-2 flex items-center p-2">
                       <svg
                         className="h-6 w-6 flex-shrink-0 text-gray-700 hover:text-lime-600 dark:text-white hover:text-lime-600"

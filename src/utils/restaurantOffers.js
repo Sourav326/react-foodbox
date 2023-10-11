@@ -16,7 +16,7 @@ const restaurantOffers = [
     },
     {
         "id": "4",
-        "offer": "8Flat ₹200 off",
+        "offer": "Flat ₹200 off",
         "code":"axis200 | Above 1000",
     },
 ]

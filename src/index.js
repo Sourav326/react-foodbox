@@ -4,13 +4,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter , RouterProvider} from 'react-router-dom';
-import About from './components/About';
+import About from './components/pages/About';
 import Home from './components/Home';
 import Error from './components/Error';
-import Contact from './components/Contact';
-import Signin from './components/Signin';
+import Contact from './components/pages/Contact';
+import Signin from './components/pages/Signin';
 import Restaurant from './components/Restaurant';
-import Signup from './components/Signup';
+import Signup from './components/pages/Signup';
 import SingleRestaurant from './components/SingleRestaurant';
 import Cart from './components/Cart';
 
