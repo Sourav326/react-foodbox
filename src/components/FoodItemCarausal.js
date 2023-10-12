@@ -37,9 +37,9 @@ const FoodItemCarausal = (props) => {
                 removeArrowOnDeviceType={["tablet", "mobile"]}
                 className="py-6">
                     {
-                        menu.map((item)=>(
-                          <div className="px-3">
-                            <ProductCard item={item}  key={item.id}/>
+                        menu.map((item,index)=>(
+                          <div className="px-3" key={index}>
+                            <ProductCard item={item}  />
                           </div>
                         ))
                     }
