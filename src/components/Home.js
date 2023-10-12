@@ -26,10 +26,6 @@ const Home = () => {
         </div>
       </div>
       <Carausel />
-      {/* <div className="max-w-7xl mx-auto py-8">
-        <p>hello</p>
-        <img className="" src={Banner} alt={Banner} />
-      </div> */}
       <RestaurantList />
       <CustomerWords />
     </>

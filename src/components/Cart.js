@@ -2,7 +2,8 @@ import { useDispatch, useSelector } from "react-redux";
 import productImage from "../images/pizza1.jpeg";
 import { clearCart,removeItem } from "../redux/slices/cartSlice";
 import CloseIcon from '@mui/icons-material/Close';
-import { useState } from "react";
+
+import toast from 'react-hot-toast';
 const Cart = () => {
     // subscribing to the cart using a selector
   const cartItems = useSelector((store)=> store.cart.items);
@@ -11,10 +12,28 @@ const Cart = () => {
   const handleClearCart = () => {
     // Dispatch an action
     dispatch(clearCart())
+    toast.success("All items removed from cart",{
+        duration: 2000,
+        position: 'top-center',
+      
+        // Styling
+        style: {
+            backgroundColor:'#FFBDAE',
+        }
+      });
   }
   const handleRemoveItem = (item) => {
     // Dispatch an action
     dispatch(removeItem(item))
+    toast.success(item.name+" Removed from cart",{
+        duration: 2000,
+        position: 'top-center',
+      
+        // Styling
+        style: {
+            backgroundColor:'#FFBDAE',
+        }
+      });
   }
   const total = useSelector((store)=> store.cart.total);
   const shipping = useSelector((store)=> store.cart.shipping_fee);

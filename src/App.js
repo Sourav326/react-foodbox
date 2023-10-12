@@ -6,6 +6,7 @@ import { Outlet } from 'react-router-dom';
 import Subscribe from './components/Subscribe';
 import { Provider } from 'react-redux';
 import appStore from './redux/appStore';
+import toast, { Toaster } from 'react-hot-toast';
 
 
 function App() {  
@@ -27,6 +28,7 @@ function App() {
               <NorthIcon/>
           </button>
       </div>
+      <Toaster />
     </Provider>
   );
 }

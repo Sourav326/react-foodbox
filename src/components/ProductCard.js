@@ -1,6 +1,7 @@
 import { useDispatch } from "react-redux";
 import { additem } from "../redux/slices/cartSlice";
 import StarIcon from '@mui/icons-material/Star';
+import toast from 'react-hot-toast';
 
 const ProductCard = (props) => {
   const item = props.item;
@@ -9,6 +10,15 @@ const ProductCard = (props) => {
   const handleAddToCart = (item) => {
     // Dispatch an action
     dispatch(additem(item))
+    toast.success(item.name+" Added to cart",{
+        duration: 2000,
+        position: 'top-center',
+      
+        // Styling
+        style: {
+            backgroundColor:'#90EE90',
+        }
+      });
   }
 
   return (
