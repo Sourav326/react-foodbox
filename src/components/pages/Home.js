@@ -1,9 +1,12 @@
-import Carausel from '../Carausel';
 import HeaderHero from '../../images/headerHero.jpeg'
 import RestaurantList from '../RestaurantList';
 import CustomerWords from '../CustomerWords';
+import Topcarausal from "../Carausel"
+import FoodItemCarausal from '../FoodItemCarausal';
+
 
 const Home = () => {
+ 
   return (
     <>
       <div className="relative h-128 w-full bg-[#feffcb] flex items-center px-6 lg:px-8 ">
@@ -25,9 +28,12 @@ const Home = () => {
           <img className="w-2/6" src={HeaderHero} alt="Delivery Boy" />
         </div>
       </div>
-      <Carausel />
+      <Topcarausal />
       <RestaurantList />
       <CustomerWords />
+      <div className="mx-auto w-full max-w-screen-xl py-16 px-6 lg:px-8 border-y">
+          <FoodItemCarausal  title="Top Dishes"/>
+      </div>
     </>
   );
 };

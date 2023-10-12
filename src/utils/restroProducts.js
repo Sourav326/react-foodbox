@@ -17,7 +17,7 @@ const restroProducts = [
                 {
                   "id":1,
                   "name": "Butter Garlic Prawns",
-                  "description": "Extra butter extra garlic just the way grandma likes it \n",
+                  "description": "Extra butter extra garlic just the way grandma likes it, you also like it \n",
                   "inStock": true,
                   "isVeg": true,
                   "price": 550,
@@ -37,7 +37,7 @@ const restroProducts = [
                 {
                   "id":3,  
                   "name": "Panko Fried Fish Fingers",
-                  "description": "Crispy fish fingers served with tatar sauce\n",
+                  "description": "Crispy fish fingers served with tatar sauce you love to eat\n",
                   "inStock": true,
                   "isVeg": false,
                   "price": 460,
@@ -57,7 +57,7 @@ const restroProducts = [
                 {
                   "id":5,  
                   "name": "Chicken Shawarma",
-                  "description": "Pita rolls with yum in every bite. Lebanese style chicken, hummus,  hot yogurt sauce & pickled vegetables.\n",
+                  "description": "Pita rolls with yum in every bite. Lebanese style chicken, hummus.\n",
                   "inStock": true,
                   "isVeg": false,
                   "price": 310,
@@ -97,7 +97,7 @@ const restroProducts = [
                 {
                   "id":9,  
                   "name": "Butter Garlic Mushrooms",
-                  "description": "Buttered mushrooms, white wine, micro greens",
+                  "description": "Buttered mushrooms, white wine, micro greens and red chillies whic taste chilly",
                   "inStock": true,
                   "isVeg": true,
                   "price": 320,
@@ -127,7 +127,7 @@ const restroProducts = [
                 {
                   "id":12,  
                   "name": "Mint Lemonade",
-                  "description": "Lemon juice, sugar & tons of fresh mint\n",
+                  "description": "Lemon juice, sugar & tons of fresh mint, fresh your mind\n",
                   "inStock": true,
                   "isVeg": true,
                   "price": 190,
@@ -137,7 +137,7 @@ const restroProducts = [
                 {
                   "id":13,  
                   "name": "Country Lemonade",
-                  "description": "Lemonade topped with orange juice.\n",
+                  "description": "Lemonade topped with orange juice. Lemonade topped with orange juice.\n",
                   "inStock": true,
                   "isVeg": true,
                   "price": 190,
@@ -147,6 +147,7 @@ const restroProducts = [
                 {
                   "id":14,  
                   "name": "Peach Iced Tea",
+                  "description": "Buttered mushrooms, white wine, micro greens and red chillies whic taste chilly\n",
                   "inStock": true,
                   "isVeg": true,
                   "price": 190,
@@ -156,6 +157,7 @@ const restroProducts = [
                 {
                   "id":15,  
                   "name": "Lemon Iced Tea",
+                  "description": "Spain's most popular tapas, crispy potatoes tossed with delicious Spanish tomato sauce\n",
                   "inStock": true,
                   "isVeg": true,
                   "price": 180,
@@ -165,7 +167,7 @@ const restroProducts = [
                 {
                   "id":16,  
                   "name": "Grandmama Special Pizza",
-                  "description": "The house special fully loaded pizza topped with American corn, onions, olives, bell peppers, jalapeno & sundried tomato\n",
+                  "description": "The house special fully loaded pizza topped with American corn, onions, olives\n",
                   "inStock": true,
                   "isVeg": true,
                   "price": 470,
@@ -215,7 +217,7 @@ const restroProducts = [
                 {
                   "id":21,  
                   "name": "Four Cheese Pizza",
-                  "description": "The cheesiest pizza of them all cheese & only cheese yellow cheddar, white cheddar, parmesan & mozzarella (add Italian tomato sauce on request)\n",
+                  "description": "The cheesiest pizza of them all cheese & only cheese yellow cheddar, white cheddar\n",
                   "inStock": true,
                   "isVeg": true,
                   "price": 560,
@@ -245,7 +247,7 @@ const restroProducts = [
                 {
                   "id":24,  
                   "name": "The Pizza From Punjab",
-                  "description": "A pizza as Indian as it gets, tandoor cooked chicken, buttery tomato sauce, Kasturi methi & mozzarella cheese\n",
+                  "description": "A pizza as Indian as it gets, tandoor cooked chicken, buttery tomato sauce\n",
                   "inStock": true,
                   "isVeg": false,
                   "price": 550,
@@ -265,7 +267,7 @@ const restroProducts = [
                 {
                   "id":26,  
                   "name": "Sloppy Bbq Cottage Cheese Burger",
-                  "description": "Crumbled cottage cheese, caramelised onions, jalapeno, home made mayonnaise, melted cheese & crispy potato straws",
+                  "description": "Crumbled cottage cheese, caramelised onions, jalapeno, home made mayonnaise",
                   "inStock": true,
                   "isVeg": true,
                   "price": 360,
@@ -285,7 +287,7 @@ const restroProducts = [
                 {
                   "id":28,  
                   "name": "Sloppy Joe Chicken Burger",
-                  "description": "Pulled barbecued chicken topped with caramelized onions, jalapenos , home made mayo & crispy potato straws\n",
+                  "description": "Pulled barbecued chicken topped with caramelized onions, jalapenos , home made mayo\n",
                   "inStock": true,
                   "isVeg": false,
                   "price": 400,
@@ -295,7 +297,7 @@ const restroProducts = [
                 {
                   "id":29,  
                   "name": "All American Burger",
-                  "description": "Grilled tenderloin patty burger served with tomato relish , caramelized onions, home made mayo & crispy potato straws\n",
+                  "description": "Grilled tenderloin patty burger served with tomato relish , caramelized onions\n",
                   "inStock": true,
                   "isVeg": false,
                   "price": 520,

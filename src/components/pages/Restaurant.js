@@ -57,7 +57,7 @@ const Restaurant = () => {
                 <FastfoodOutlinedIcon />
                 <span className="capitalize">Top </span>
           </div>
-            <div className="col-span-2 flex justify-left gap-1 items-center hover:bg-lime-600 py-2 px-3 hover:text-white cursor-pointer rounded-lg " onClick={() => handleFilter('sector 15')}>
+            <div className="col-span-2 lg:col-span-1 flex justify-left gap-1 items-center hover:bg-lime-600 py-2 px-3 hover:text-white cursor-pointer rounded-lg " onClick={() => handleFilter('sector 15')}>
                 <WhereToVoteOutlinedIcon />
                 <span className="capitalize">Sector 15</span>
           </div>
