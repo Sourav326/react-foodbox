@@ -2,8 +2,7 @@ import { useSelector } from "react-redux";
 import logo from "../logo.png";
 import "./css/Header.css";
 import { NavLink,Link } from "react-router-dom";
-import LocalMallIcon from '@mui/icons-material/LocalMall';
-import FavoriteIcon from '@mui/icons-material/Favorite';
+import ShoppingCartCheckoutIcon from '@mui/icons-material/ShoppingCartCheckout';
 const Header = () => {
   function navbarToggle(){
     const element = document.getElementById("toggleNavbar");
@@ -85,7 +84,7 @@ const Header = () => {
                   </div>
                   <div className="pr-6 lg:pr-0 ml-4 flow-root lg:ml-6 lg:block">
                     <NavLink to="/cart" className="group -m-2 flex items-center p-2">
-                      <LocalMallIcon className="text-gray-700 dark:text-white hover:text-lime-600 group" />
+                      <ShoppingCartCheckoutIcon className="text-gray-700 dark:text-white hover:text-lime-600 group" />
                       <span className="ml-1 text-sm font-medium text-gray-700 dark:text-white group-hover:text-lime-600">
                         {cartItems.length}
                       </span>
