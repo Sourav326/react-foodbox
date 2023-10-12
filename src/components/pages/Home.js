@@ -1,7 +1,7 @@
-import Carausel from './Carausel';
-import HeaderHero from '../images/headerHero.jpeg'
-import RestaurantList from './RestaurantList';
-import CustomerWords from './CustomerWords';
+import Carausel from '../Carausel';
+import HeaderHero from '../../images/headerHero.jpeg'
+import RestaurantList from '../RestaurantList';
+import CustomerWords from '../CustomerWords';
 
 const Home = () => {
   return (

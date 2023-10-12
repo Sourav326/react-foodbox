@@ -1,6 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import productImage from "../images/pizza1.jpeg";
-import { clearCart,removeItem } from "../redux/slices/cartSlice";
+import { clearCart,removeItem } from "../../redux/slices/cartSlice";
 import CloseIcon from '@mui/icons-material/Close';
 
 import toast from 'react-hot-toast';

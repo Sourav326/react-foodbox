@@ -1,7 +1,7 @@
-import RestaurantCard from "./RestaurantCard";
-import Restaurants from "../utils/Restaurants";
-import RestroCarausel from "./RestroCarausel";
-import offer2 from "../images/hero-thumb.png"
+import RestaurantCard from "../RestaurantCard";
+import Restaurants from "../../utils/Restaurants";
+import RestroCarausel from "../RestroCarausel";
+import offer2 from "../../images/hero-thumb.png"
 import { useState } from "react";
 
 import FastfoodOutlinedIcon from '@mui/icons-material/FastfoodOutlined';
