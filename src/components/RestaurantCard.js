@@ -18,7 +18,8 @@ const RestaurantCard = (props,index) => {
             <div className='p-4 flex flex-col gap-3'>
                 <div className='text-lg font-bold hover:text-lime-600'><Link to="/restaurant">{data?.name}</Link></div>
                 <div className='text-sm text-slate-400 font-normal'>{data?.cuisines.join(', ')}</div>
-                <div className='text-sm text-slate-400 font-bold'>{data?.costForTwo}</div>
+                <div className='text-sm text-slate-400 font-bold'>{data?.costForTwo}, <span className='text-sm text-slate-300'>{data?.areaName}</span></div>
+                
                 <div className="flex py-3">
                     <span className="border border-blue-200 text-blue-600 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 flex items-center">
                         <span className="text-yellow-400 text-xs"><StarIcon /></span> {data?.avgRating}

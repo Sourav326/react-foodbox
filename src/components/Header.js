@@ -15,7 +15,7 @@ const Header = () => {
       <div className="bg-white sticky top-0 z-50">
         <header className="relative bg-white ">
           <p className="flex h-10 items-center justify-center bg-gradient-to-r from-violet-500 to-fuchsia-500 px-4 text-sm font-medium text-white sm:px-6 lg:px-8">
-            Get free delivery on orders over $100
+            Get free delivery on orders over ₹1000
           </p>
           <nav
             aria-label="Top"

@@ -4,7 +4,7 @@ const Restaurants = [
             "name": "Dark Brown",
             "cloudinaryImageId": "mzdetw2s1ihmpiegkhyl",
             "locality": "Shopping Centre Market",
-            "areaName": "Sector 15",
+            "areaName": "Sector 16",
             "costForTwo": "₹250 for two",
             "cuisines": [
                 "Italian-American",

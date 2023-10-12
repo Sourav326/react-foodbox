@@ -18,7 +18,9 @@ const Cart = () => {
       
         // Styling
         style: {
-            backgroundColor:'#FFBDAE',
+            backgroundColor:'#FFE76B',
+            color:"red",
+            fontWeight:600
         }
       });
   }
@@ -31,7 +33,9 @@ const Cart = () => {
       
         // Styling
         style: {
-            backgroundColor:'#FFBDAE',
+            backgroundColor:'#FFE76B',
+            color:"red",
+            fontWeight:600
         }
       });
   }

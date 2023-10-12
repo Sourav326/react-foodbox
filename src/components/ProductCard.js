@@ -16,7 +16,9 @@ const ProductCard = (props) => {
       
         // Styling
         style: {
-            backgroundColor:'#90EE90',
+            backgroundColor:'#7BFFC2',
+            color:"green",
+            fontWeight:600
         }
       });
   }
