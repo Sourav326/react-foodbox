@@ -17,15 +17,15 @@ const Contact = () => {
                 <form action="" className="flex flex-col gap-4">
                     <div className="flex flex-col">
                         <label htmlFor="name" className="mb-2">Name</label>
-                        <input className="p-3 border rounded" type="text" name="nam" placeholder="Enter name"/>
+                        <input className="p-3 border rounded" type="text" name="nam" placeholder="Enter name" required/>
                     </div>
                     <div className="flex flex-col">
                         <label htmlFor="email" className="mb-2">Email</label>
-                        <input className="p-3 border rounded" type="email" name="email" placeholder="Enter email"/>
+                        <input className="p-3 border rounded" type="email" name="email" placeholder="Enter email"required/>
                     </div>
                     <div className="flex flex-col">
                         <label htmlFor="phone" className="mb-2">Comment</label>
-                        <textarea className="p-3 border rounded" name="comment" rows="6"></textarea>
+                        <textarea className="p-3 border rounded" name="comment" rows="6" required></textarea>
                     </div>
                     <div>
                         <button className="py-3 px-8 bg-lime-600 text-white font-semibold">Submit</button>

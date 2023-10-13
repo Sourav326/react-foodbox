@@ -31,7 +31,9 @@ const Cart = () => {
                 <p className="capitalize text-stone-400">you have {cartItems.length} items in your cart</p>
                     {
                         cartItems.length == 0 && (
-                            <h1 className="text-center text-3xl font-semibold capitalize pb-3 text-slate-500">Cart is empty</h1>
+                            <div className="flex justify-center items-center h-[33vh]">
+                                <h1 className="text-center text-3xl font-semibold capitalize pb-3 text-slate-500">Cart is empty</h1>
+                            </div>
                         )
                     } 
 
