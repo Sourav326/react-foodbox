@@ -12,7 +12,7 @@ const Subscribe = () => {
                      every day
                     </h1>
                     <form action="" className="flex flex-col lg:flex-row gap-4 pt-8">
-                        <input className="p-3 border w-full" type="email" name="email" placeholder="Enter email"/>
+                        <input className="p-3 border w-full" type="email" name="email" placeholder="Enter email" required/>
                         <button className="py-3 px-8 bg-lime-600 text-white  ">Submit</button>
                     </form>
                 </div>
